@@ -1,34 +1,49 @@
-let petNames= ['Darcy', 'Jack', 'Jerry', 'Marty', 'Vito', 'Vinny', 'Riley', 'Saddie', 'Marge', 'Sam']
+var petNames= ['Darcy', 'Jack', 'Jerry', 'Marty', 'Vito', 'Vinny', 'Riley', 'Saddie', 'Marge', 'Sam']
+console.log(`${petNames}`)
 
-let withMaramaduke = petNames.push['Marmaduke']
+var withMaramaduke= petNames.push('Marmaduke')
 
-console.log(petNames)
+petNames.splice(5,1)
+console.log(`The action taken was: Remove Vinny from the array.`)
+console.log(`The remaining data are: ${petNames}.`)
 
-petNames.splice(5,1) 
-console.log('The action taken was: Remove Vinny')
-console.log("The remaing data are: " + petNames)
+petNames.splice(3,1)
+console.log(`The action taken was: Remove Marty from the array.`)
+console.log(`The remaining data are: ${petNames}.`)
 
-petNames.splice(3,1) 
-console.log('The action taken was: "Remove Marty") 
-console.log("The remaing data are: " + petNames)
+petNames.unshift('Nancy')
+console.log(`The action taken was: Add Nancy to the front of the array.`)
+console.log(`The remaining data are: ${petNames}.`)
 
-petNames.unshift('Nancy') 
-console.log('The action taken was: Put Nancy at front of list')
-console.log(console.log("The remaing data are: " + petNames)
-
-petNames.push('Nancy')
-console.log('The action taken was: Move Nancy to end of array ') 
-console.log("The remaing data are: " +petNames)
+let userName = prompt("What is your name?")
+petNames.push(userName)
+console.log(`The action taken was: Add user name to the end of the array.`)
+console.log(`The remaining data are: ${petNames}.`)
 
 let rileyNum = petNames.indexOf('Riley')
-console.log(rileyNum)
+console.log(`The action taken was: Show the array index of Riley.`)
+console.log(`${rileyNum}`)
 
 let cindyNum = petNames.indexOf('Cindy')
-console.log(cindyNum)
+console.log(`The action taken was: Show the array index of Cindy.`)
+console.log(`${cindyNum}`)
 
+let petMaramaduke = petNames.concat(withMaramaduke)
+console.log(`Shows the withMaramaduke array data.`)
+console.log(`The remaining data are: ${petMaramaduke}`)
 
-/* After each user chosen activity (eg. remove 'Vinny'), output to the console the action taken and the current state of the petNames array using this format: 
+let abB= petNames.shift()
+console.log(`The removed element is: ${abB}.`)
 
-The action taken was: Remove Vinny
-The remaining data are: 
-[Darcy, Jack, Jerry, Marty, Vito, Riley, Saddie, Marge, Sam]
+let abC= petNames.unshift('Barney')
+console.log(`The added element is: ${abC}.`)
+
+let somePets = ['Ted','Fred','Jed','Ned','Ed','Zed']
+let allPets = petNames.concat(somePets)
+console.log(`${allPets}`)
+
+let stringPets = petNames.join()
+console.log(`${stringPets}`)
+
+let abF = petNames.unshift('Agnes')
+console.log(`The added element is: ${abF}.`)
